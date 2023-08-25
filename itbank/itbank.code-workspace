@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../sprint1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "itbank"
+	}
+}
