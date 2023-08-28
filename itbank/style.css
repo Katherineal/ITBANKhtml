@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Ubuntu:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-color: #ffffff ;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem 10%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo-1{
+    width: 0;
+}
+.logo-2{
+    width: 200px;
+    height: 100px;
+    display: flex;
+}
+
+.menu{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center ;
+    z-index: 1000;
+    background: rgba(0, 68, 255, 0.808);
+}
+.navbar{
+    display: flex;
+}
+
+.menu-1{
+    margin-right: 180px;
+    align-items: center;
+    display: flex;
+}
+.menu-2{
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: aliceblue;
+}
+
+
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+    margin-top: 30px;
+}
+.submenu{
+    position: relative;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+    margin-top: 100px;
+}
+
+.socials{
+    display: flex;
+}
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgba(0, 68, 255, 0.808);
+}
+.social:hover{
+    background-color: black;
+}
+.social img {
+    margin: 8px 0 0 10px
+}
+
+/*BOTONES DE SLIDER*/
+.botones{
+    margin-top: 0px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+.btn-1:hover{
+    border: 2px solid black;
+    background-color: rgba(0, 68, 255, 0.808);
+
+}
+.slider-img{
+    width: 100%;
+}
+.slider-text{
+    align-items: center;
+}
+.slider-img img{
+    margin-right: 0px;
+    width: 100%;
+}
+
+
+/*PARTE DE INFORMACIÓN*/
+.info{ 
+    padding: 100px 200px;
+    display: flex;
+    align-items: center ;
+}
+.info-img{
+    width: 100%;
+}
+.info-img img{
+    width: 600px;
+    height: 600px;
+    margin-right: 100px;
+}
+.info-txt{
+    width: 50%;
+}
+.info-txt h2{
+    font-size: 75px;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.info-txt p{
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 50px;
+}
+.btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.btn-2:hover{
+    background-color: rgba(0, 68, 255, 0.808);
+}
+/*HORARIO Y TELEFONO*/
+.horario{
+    padding: 100px 0px;
+    background-color: white;
+}
+.horario-info h2{
+    font-size: 75px;
+    color: rgba(0, 68, 255, 0.808);
+    font-weight: 800;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.horario-txt{
+    display: flex;
+    justify-content: space-between;
+}
+.txt{
+    color: gray;
+}
+.txt h4{
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+}
+.txt p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/*MAPA*/
+.map{
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
+
+/*PIE DE PAGINA*/
+.footer{
+    padding: 100px 20px;
+    display: flex ;
+    justify-content: space-between;
+}
+.links h4{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.links ul{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media(max-width: 993px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+    .menu-2{
+        display: none;
+    }
+    .logo-1{
+        width: 100px;
+        margin-left: 10%;
+    }
+    .logo-2{
+        width: 0;
+    }
+    .menu label{
+        display: initial;
+        margin-top: 10px;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(128, 128, 128, 0.856);
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header-content{
+        padding: 30px;
+        margin-top: 100px;
+    }
+    
+    .slider{
+        flex-direction: column;
+    }
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .slider-txt h1{
+        font-size: 50px;
+    }
+    .slider-txt p{
+        font-size: 16px;
+    }
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .slider-img{
+        width: 100%;
+    }
+    .slider-img img{
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .info{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .info-img{
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
+    .info-img img{
+        width: 60%;
+        height: 60%;
+        margin-bottom: 25px;
+    }
+    .info-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .info-txt h2{
+        font-size: 50px;
+    }
+    .info-txt p{
+        font-size: 16px;
+    }
+    .btn-1{
+        font-size: 16px;
+    }
+    .horario-info h2{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .horario-txt{
+        flex-direction: column;
+    }
+    .socials{
+        justify-content: center;
+    }
+    .social img{
+        margin: 8px 0 0 0;
+    }
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links h4{
+        margin: 25px 0px 10px 0px;
+    }
+}
