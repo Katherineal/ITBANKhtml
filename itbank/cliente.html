@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBANK</title>
+    <link rel="icon" type="image/jpg" href="fotos/bank.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cliente.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+
+            <img class="logo-1" src="fotos/itbank.png"  alt="">
+            <input type="checkbox" name="" id="menu"/>
+
+            <nav class="navbar">
+        
+                <img class="logo-2" src="fotos/itbank.png"  alt="">
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h1>Bienvenido al Home Banking ITBANK</h1>
+        
+        <form class="login-form">
+            <h2>Iniciar Sesión</h2>
+
+                <label for="document-number">Documento de identidad</label>
+                <select id="document-number">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="DNI">DNI</option>
+                    <option value="LC">LC</option>
+                    <option value="LE">LE</option>
+                    <option value="CI">CI</option>
+                    <option value="PASAPORTE">PASAPORTE</option>
+                    <option value="RENAPER">RENAPER</option>
+                </select>
+            
+            <input type="text" id="dni" name="dni" required>
+            <br>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <a href="index.html" target="_blank" class="btn-1" > Ingresar</a>
+            <br>
+            <div class="register-link">
+                ¿No tienes una cuenta? <a href="/registrate.html" target="_blank" id="register-button">Regístrate</a>
+            </div>
+            <div class="forgot-link">
+                <a href="/recuperacion-usuario.html" target="_blank" id="forgot-password-link">Olvidé o bloqueé mi Usuario / Clave Digital</a>
+            </div>
+        </form>
+    </div> <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
